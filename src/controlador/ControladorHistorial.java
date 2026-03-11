@@ -13,6 +13,7 @@ public class ControladorHistorial {
     public List<Object[]> obtenerReporteGeneral() {
         List<Object[]> lista = new ArrayList<>();
         // Usamos los nombres exactos de tu diagrama: puntaje_total, nivel_alcanzado, etc.
+        // p = partidas, u = usuarios, s = sucursales
         String sql = "SELECT p.id_partida, u.username, s.nombre, p.puntaje_total, p.nivel_alcanzado, p.fecha_registro " +
                 "FROM Partidas p " +
                 "JOIN Usuarios u ON p.id_usuario = u.id_usuario " +

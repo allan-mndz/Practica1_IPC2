@@ -257,7 +257,9 @@ public class VistaMenuEmpleado extends JFrame {
         timerReloj.stop();
         // Guardamos puntaje total y nivel alcanzado
         conPartida.finalizarPartida(idPartidaActual, puntaje, nivel);
-        JOptionPane.showMessageDialog(this, "Turno finalizado. Puntaje: " + puntaje);
+        String resumen = "FIN DE LA PARTIDA!\n\n" + "Resumen de Resultados:\n" + "Nivel Alcanzado: " + nivel + "\n" + "Puntaje Final: " + puntaje + "\n\n" + "Volviendo al menú principal...";
+
+        JOptionPane.showMessageDialog(this, resumen, "Resumen de Partida", JOptionPane.INFORMATION_MESSAGE);
         this.dispose();
     }
 

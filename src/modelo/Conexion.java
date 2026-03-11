@@ -16,7 +16,7 @@ public class Conexion {
            // System.out.println("Si se conecto");
 
         } catch (ClassNotFoundException | SQLException e)  {
-            //System.out.println("No se encontró el driver de MySQL. ");
+            //System.out.println("No se encontró MySQL. ");
         }
         return con;
     }
